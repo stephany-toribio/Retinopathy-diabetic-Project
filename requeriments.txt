@@ -2,5 +2,4 @@ numpy
 streamlit
 opencv-python
 Pillow
-tensorflow==2.7.0
 keras==2.7.0
