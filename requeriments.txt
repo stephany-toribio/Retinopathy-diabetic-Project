@@ -1,5 +1,7 @@
-numpy
 streamlit
-opencv-python
+numpy
+pandas
+keras
+tensorflow
 Pillow
-keras==2.7.0
+urllib3
