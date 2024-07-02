@@ -1,13 +1,13 @@
-from util import classify, set_background
+#from util import classify, set_background
 # import cv2
 import os
 import streamlit as st
 import numpy as np
 from PIL import Image
-from util import classify, set_background
+#from util import classify, set_background
 import tensorflow as tf
 
-set_background('app/bgs/eye2.png')
+#set_background('app/bgs/eye2.png')
 # print(os.getcwd())
 # set title
 st.title('Diabetic Retinopathy classification')
