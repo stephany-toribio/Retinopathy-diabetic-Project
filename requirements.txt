@@ -1,0 +1,7 @@
+streamlit
+numpy
+pandas
+tensorflow==2.16.2
+Pillow
+urllib3
+gdown
