@@ -36,7 +36,7 @@ if uploaded_file is not None:
         modelo = load_model(model_filename)
 
         # Mostrar la imagen subida
-        st.image(uploaded_file, caption='Imagen de entrada', use_column_width=True)
+        st.image(uploaded_file, caption='Imagen subida a la nube', use_column_width=True)
 
         # Preprocesamiento de la imagen para hacer la predicción
         img = image.load_img(uploaded_file, target_size=(224, 224))  # Ajusta según las dimensiones de entrada de tu modelo
