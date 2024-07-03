@@ -16,13 +16,13 @@ model_filename = 'retinopathy_detection_finetunning.keras'
 if not os.path.exists(zip_filename):
     with st.spinner('Descargando el archivo ZIP...'):
         gdown.download(zip_url, zip_filename, quiet=False)
-    st.success('Archivo ZIP descargado con éxito!')
+    #st.success('Archivo ZIP descargado con éxito!')
 
 # Extraer el modelo del archivo ZIP
 if not os.path.exists(model_filename):
     with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
         zip_ref.extractall('.')
-    st.success('Modelo extraído con éxito!')
+    #st.success('Modelo extraído con éxito!')
 
 # Título de la aplicación
 st.title('Predicción de Imágenes con Modelo de Deep Learning')
@@ -50,9 +50,9 @@ if uploaded_file is not None:
         # Mostrar resultados
         st.write("Predicción:")
         if prediction<0.5:
-            st.write(prediction, "-> NO tiene retinopatía diabética")
+            st.write(prediction, "--> El paciente NO tiene retinopatía diabética")
         else:
-            st.write(prediction, "-> SI tiene retinopatía diabética")
+            st.write(prediction, "--> El paciente SI tiene retinopatía diabética")
 
     except Exception as e:
         st.write("Error al cargar el modelo o procesar la imagen. Detalles del error:", e)
